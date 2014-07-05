@@ -1,0 +1,39 @@
+{
+  "name": "html5app",
+  "version": "0.0.1",
+  "authors": [
+    "Adam Kuffel <adam@kuffel.eu>"
+  ],
+  "description": "HTML5 Application Template",
+  "main": "index.html",
+  "dependencies": {
+    "jquery": "2.1.*",
+    "bootstrap": "3.2.*",
+    "bootswatch": "3.2.*",
+    "font-awesome": "4.1.*",
+    "animate.css": "3.1.*",
+    "backbone": "1.1.*",
+    "underscore": "1.6.*",
+    "underscore.string": "2.3.*",
+    "moment": "2.6.*",
+    "modernizr": "2.*",
+    "parallax" : "2.1.*"
+  },
+  "devDependencies": {},
+  "moduleType": [
+    "amd"
+  ],
+  "keywords": [
+      
+  ],
+  "license": "MIT",
+  "homepage": "www.kuffel.eu",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
