@@ -11,7 +11,6 @@ var Application = Backbone.Router.extend({
     },
     
     routeDefault : function( actions ){
-        /*
         var showPageID = '#app-page-main';
         if(actions !== null){
             showPageID = '#app-page-'+actions;
@@ -24,8 +23,13 @@ var Application = Backbone.Router.extend({
             $('.app-page').hide();
             $('#app-page-404.app-page').show();
         }
+        $('li', '#navbar-main').removeClass('active');
+        if(actions === null){
+            $('[href="#"]', '#navbar-main').parent('li').addClass('active');
+        }else{
+            $('[href="#'+actions+'"]', '#navbar-main').parent('li').addClass('active');
+        }
         console.log(showPageID);
-        */
     }
     
     
@@ -40,7 +44,7 @@ var Application = Backbone.Router.extend({
 $(document).ready(function(){
     //$('[href="'+document.location.pathname+'"]').parent('li').addClass('active');
     //console.log(document.location.pathname);
-    //$('.app-page').hide();
+    $('.app-page').hide();
     app = new Application({});       
 });
 
