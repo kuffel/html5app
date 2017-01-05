@@ -10,3 +10,5 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Created project and directories
 - Added README, Changelog, LICENSE, bower.json and package.json
 - Added .gitignore
+- Added dependencies
+- Updated gruntfile

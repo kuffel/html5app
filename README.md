@@ -11,7 +11,6 @@ You must install node.js to download dependencies, build and test the project. W
     npm install
     bower install
     grunt
-    grunt test
     grunt run
 
 
