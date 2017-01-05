@@ -1,0 +1,24 @@
+{
+  "name": "html5app",
+  "description": "HTML5 base application",
+  "main": "index.html",
+  "authors": [
+    "kuffel <adam@kuffel.eu>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "HTML5",
+    "Baseapp",
+    "Bower",
+    "Grunt",
+    "Bootstrap"
+  ],
+  "homepage": "https://github.com/kuffel/html5app",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

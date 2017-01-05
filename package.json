@@ -1,0 +1,26 @@
+{
+  "name": "html5app",
+  "version": "0.0.1",
+  "description": "HTML5 base application",
+  "main": "index.html",
+  "scripts": {
+    "test": "test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kuffel/html5app.git"
+  },
+  "keywords": [
+    "HTML5",
+    "Baseapp",
+    "Bower",
+    "Grunt",
+    "Bootstrap"
+  ],
+  "author": "kuffel <adam@kuffel.eu>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kuffel/html5app/issues"
+  },
+  "homepage": "https://github.com/kuffel/html5app#readme"
+}
