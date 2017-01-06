@@ -57,3 +57,85 @@ Grunt is a JavaScript task runnner that helps to automate repetetive tasks. Some
 
     grunt --help => Show help and available tasks
 
+
+## Docs
+
+Please refer these docs to get more information about using a particular library or framework in this project.
+
+### Libraries and Frameworks
+
+[jquery](https://jquery.com/)
+
+[bootstrap](http://getbootstrap.com/)
+
+[bootswatch](http://bootswatch.com/)
+
+[jasny-bootstrap](http://www.jasny.net/bootstrap/)
+
+[bootstrap-table](http://bootstrap-table.wenzhixin.net.cn/)
+
+[bootstrap-toggle](http://www.bootstraptoggle.com/)
+
+[bootstrap-social](https://lipis.github.io/bootstrap-social/)
+
+[bootstrap-select](https://silviomoreto.github.io/bootstrap-select/)
+
+[bootstrap3-wysihtml5-bower](https://github.com/Waxolunist/bootstrap3-wysihtml5-bower)
+
+[eonasdan-bootstrap-datetimepicker](https://github.com/Eonasdan/bootstrap-datetimepicker)
+
+[font-awesome](http://fontawesome.io/)
+
+[animate.css](https://daneden.github.io/animate.css/)
+
+[moment](http://momentjs.com/)
+
+[async](http://caolan.github.io/async/)
+
+[underscore](http://underscorejs.org/)
+
+[underscore.string](http://gabceb.github.io/underscore.string.site/)
+
+[backbone](http://backbonejs.org/)
+
+[localforage](https://localforage.github.io/localForage/)
+
+[validator-js](https://github.com/chriso/validator.js)
+
+[ckeditor](http://ckeditor.com/)
+
+[jquery.cookie](https://github.com/carhartl/jquery-cookie)
+
+### Tools
+
+[Grunt - The JavaScript Task Runner](http://gruntjs.com/)
+
+[grunt-bump - Increment package version](https://github.com/vojtajina/grunt-bump)
+
+[grunt-contrib-clean - Clean files and folders](https://github.com/gruntjs/grunt-contrib-clean)
+
+[grunt-contrib-concat - Concatenate files.]()
+
+[grunt-contrib-connect - ](https://github.com/gruntjs/grunt-contrib-concat)
+
+[grunt-contrib-copy - Copy files and folders](https://github.com/gruntjs/grunt-contrib-copy)
+
+[grunt-contrib-cssmin - Minify CSS](https://github.com/gruntjs/grunt-contrib-cssmin)
+
+[grunt-contrib-jshint - Validate files with JSHint](https://github.com/gruntjs/grunt-contrib-jshint)
+
+[grunt-contrib-qunit - Run QUnit unit tests in a headless PhantomJS instance](https://github.com/gruntjs/grunt-contrib-qunit)
+
+[grunt-contrib-uglify - Minify JavaScript files with UglifyJS](https://github.com/gruntjs/grunt-contrib-uglify)
+
+[grunt-contrib-watch - Run predefined tasks whenever watched file patterns are added, changed or deleted](https://github.com/gruntjs/grunt-contrib-watch)
+
+[grunt-zip - Zip and unzip files via a grunt plugin](https://github.com/twolfson/grunt-zip)
+
+### Useful resources
+
+[Libraries.io - Useful open source directory](https://libraries.io/)
+
+[NPM - Node Package Manager](https://www.npmjs.com/)
+
+[Bower - A package manager for the web](https://bower.io/)
