@@ -1,6 +1,93 @@
 
+
+    html {
+        height: 100%;
+    }
+
     body.with-navbar-fixed-top {
         padding-top: 70px;
+    }
+
+    /*
+    ########################################################################
+    Offcanvas push helper classes
+    ########################################################################
+    */
+
+    body.with-offcanvas-push {
+        height: 100%;
+        padding: 50px 0 0 0;
+    }
+
+    body.with-offcanvas-push .navbar-toggle {
+        float: left;
+        margin-left: 15px;
+    }
+
+    @media (min-width: 0) {
+        body.with-offcanvas-push .navbar-toggle {
+            display: block; /* force showing the toggle */
+        }
+    }
+
+    @media (min-width: 992px) {
+        body.with-offcanvas-push {
+            padding: 0;
+        }
+        body.with-offcanvas-push .navbar {
+            right: auto;
+            background: none;
+            border: none;
+        }
+    }
+
+
+    /*
+    ########################################################################
+    Offcanvas reveal helper classes
+    ########################################################################
+    */
+
+    body.with-offcanvas-reveal {
+        height: 100%;
+    }
+
+    body.with-offcanvas-reveal .navbar-toggle {
+        float: left;
+        margin-left: 15px;
+    }
+
+    body.with-offcanvas-reveal .navmenu {
+        z-index: 1;
+    }
+
+    body.with-offcanvas-reveal .canvas {
+        position: relative;
+        left: 0;
+        z-index: 2;
+        min-height: 100%;
+        padding: 50px 0 0 0;
+        background: #fff;
+    }
+
+    @media (min-width: 0) {
+    body.with-offcanvas-reveal .navbar-toggle {
+        display: block; /* force showing the toggle */
+    }
+    }
+
+    @media (min-width: 992px) {
+        body.with-offcanvas-reveal {
+            padding: 0;
+        }
+        body.with-offcanvas-reveal .navbar {
+            right: auto;
+            background: none;
+            border: none;
+        }
+        body.with-offcanvas-reveal .canvas {
+            padding: 0;
+        }
     }
 
 
