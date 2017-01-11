@@ -2,3 +2,74 @@
     body.with-navbar-fixed-top {
         padding-top: 70px;
     }
+
+
+    /*
+    ########################################################################
+    Navmenu helper classes
+    ########################################################################
+    */
+
+    body.with-navmenu-fixed-left,
+    body.with-navmenu-fixed-right {
+        height: 100%;
+        padding: 50px 0 0 0;
+    }
+
+    body.with-navmenu-fixed-left .navmenu,
+    body.with-navmenu-fixed-right .navmenu {
+        padding-top: 50px;
+    }
+
+    body.with-navmenu-fixed-left .navbar,
+    body.with-navmenu-fixed-right .navbar {
+        display: block;
+        text-align: center;
+    }
+
+    body.with-navmenu-fixed-left .navbar-brand,
+    body.with-navmenu-fixed-right .navbar-brand {
+        display: inline-block;
+        float: none;
+    }
+
+    body.with-navmenu-fixed-left .navbar-toggle {
+        position: absolute;
+        float: left;
+        margin-left: 15px;
+    }
+
+    body.with-navmenu-fixed-right .navbar-toggle {
+        float: right;
+    }
+
+
+    body.with-navmenu-fixed-left .container,
+    body.with-navmenu-fixed-right .container {
+        max-width: 100%;
+    }
+
+    @media (min-width: 1px) {
+        body.with-navmenu-fixed-left .navbar-toggle,
+        body.with-navmenu-fixed-right .navbar-toggle {
+            display: block !important;
+        }
+    }
+
+    @media (min-width: 992px) {
+        body.with-navmenu-fixed-left {
+            padding: 0 0 0 300px;
+        }
+        body.with-navmenu-fixed-right {
+            padding: 0 300px 0 0;
+        }
+
+        body.with-navmenu-fixed-left .navmenu,
+        body.with-navmenu-fixed-right .navmenu {
+            padding-top: 0;
+        }
+        body.with-navmenu-fixed-left .navbar,
+        body.with-navmenu-fixed-right .navbar {
+            display: none !important; /* IE8 fix */
+        }
+    }
