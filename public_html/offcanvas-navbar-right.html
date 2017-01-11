@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML5 App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./libs/css/default.min.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/app.css" />
+</head>
+<body class="with-offcanvas-navbar" >
+
+
+    <div class="container">
+        <div class="navbar navbar-fixed-top navbar-default">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navbar-offcanvas" data-canvas="body">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">HTML5 App</a>
+            </div>
+            <div class="navbar-offcanvas offcanvas">
+                <a class="navmenu-brand" href="#">HTML5 App</a>
+                <ul class="nav navbar-nav">
+                    <li><a href="./"><i class="fa fa-home fa-fw" ></i> Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li class="divider"></li>
+                            <li class="dropdown-header">Nav header</li>
+                            <li><a href="#">Separated link</a></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="jumbotron">
+            <h1>Offcanvas Navbar example</h1>
+            <p>This example demonstrates using the offcanvas plugin with the navbar.</p>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="./libs/js/default.min.js" ></script>
+    <script type="text/javascript" src="./assets/app.js" ></script>
+</body>
+</html>
