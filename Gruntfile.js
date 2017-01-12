@@ -6,7 +6,7 @@ module.exports = function (grunt) {
         cssmin: {
             base: {
                 options: {
-                    banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd HH:MM:ss") %> */\n',
+                    banner: '/*! <%= pkg.name %> / <%= pkg.version %> / <%= grunt.template.today("yyyy-mm-dd HH:MM:ss") %> */\n',
                     relativeTo: './',
                     root: './'
                 },
@@ -44,7 +44,7 @@ module.exports = function (grunt) {
         }, // END copy
         concat: {
             options: {
-                banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd HH:MM:ss") %> */\n',
+                banner: '/*! <%= pkg.name %> / <%= pkg.version %> / <%= grunt.template.today("yyyy-mm-dd HH:MM:ss") %> */\n',
                 separator: ';'
             },
             default: {
