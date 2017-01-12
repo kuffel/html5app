@@ -1,5 +1,6 @@
 {
   "name": "html5app",
+  "version": "0.0.1",
   "description": "HTML5 base application",
   "main": "index.html",
   "authors": [
@@ -44,9 +45,11 @@
     "ckeditor": "^4.6.1",
     "jquery.cookie": "^1.4.1",
     "chosen": "^1.6.2",
-    "chosen-bootstrap": "^1.1.0"
+    "chosen-bootstrap": "^1.1.0",
+    "bootstrap-tagsinput": "^0.8.0"
   },
   "resolutions": {
-    "chosen": "^1.6.2"
+    "chosen": "^1.6.2",
+    "jquery": "^3.1.1"
   }
 }

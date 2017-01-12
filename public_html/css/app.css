@@ -8,6 +8,11 @@
         padding-top: 70px;
     }
 
+
+    .bootstrap-tagsinput {
+        display: block;
+    }
+
     /*
     ########################################################################
     Offcanvas push helper classes

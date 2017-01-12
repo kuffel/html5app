@@ -22,6 +22,7 @@ module.exports = function (grunt) {
                         'bower_components/bootstrap-table/dist/bootstrap-table.min.css',
                         'bower_components/bootstrap-toggle/css/bootstrap-toggle.css',
                         'bower_components/bootstrap-select/dist/css/bootstrap-select.css',
+                        'bower_components/bootstrap-tagsinput/dist/bootstrap-tagsinput.css',
                         'bower_components/chosen/chosen.css',
                         'bower_components/chosen-bootstrap/chosen.bootstrap.css',
                         'bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.css',
@@ -65,6 +66,7 @@ module.exports = function (grunt) {
                     'bower_components/bootstrap-toggle/js/bootstrap-toggle.js',
                     'bower_components/bootstrap-select/dist/js/bootstrap-select.js',
                     'bower_components/bootstrap-select/dist/js/i18n/defaults-de_DE.js',
+                    'bower_components/bootstrap-tagsinput/dist/bootstrap-tagsinput.js',
                     'bower_components/chosen/chosen.jquery.js',
                     'bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js',
                     'bower_components/localforage/dist/localforage.js'
@@ -136,14 +138,16 @@ module.exports = function (grunt) {
                 createTag: false
             }
         },// END bump
-        zip: {
-            app : {
-                cwd : './public_html',
-                dest : './application.zip',
-                src: './public_html/*'
+        compress: {
+            main : {
+                options : {
+                    archive : "application.zip"
+                },
+                files : [
+                    {src: ['public_html/**'], dest: '/'}
+                ]
             }
-        }// END zip
-
+        }// END compress
 
     }); // END grunt.initConfig
 
@@ -156,15 +160,15 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-contrib-qunit');
+    grunt.loadNpmTasks('grunt-contrib-compress');
     grunt.loadNpmTasks('grunt-bump');
-    grunt.loadNpmTasks('grunt-zip');
 
-    grunt.registerTask('test', ['connect', 'qunit']);
+    grunt.registerTask('test', 'Run qunit tests headless with phantom.js', ['connect', 'qunit']);
 
-    grunt.registerTask('run', ['connect', 'watch']);
+    grunt.registerTask('run', 'Start a webserver listening on port 9000', ['connect', 'watch']);
 
-    grunt.registerTask('build', [ 'cssmin', 'copy', 'concat', 'uglify', 'jshint', 'clean' , 'zip' ]);
+    grunt.registerTask('build', 'Create a zip file for deployment on production servers', [ 'cssmin', 'copy', 'concat', 'uglify', 'jshint', 'clean' , 'compress' ]);
 
-    grunt.registerTask('default', [ 'cssmin', 'copy', 'concat', 'uglify', 'jshint', 'clean' ]);
+    grunt.registerTask('default', 'Build and prepare everything', [ 'cssmin', 'copy', 'concat', 'uglify', 'jshint', 'clean' ]);
 
 };
