@@ -133,9 +133,14 @@ module.exports = function (grunt) {
         bump: {
             options: {
                 files: ['package.json', 'bower.json'],
-                commit: false,
-                push: false,
-                createTag: false
+                commit: true,
+                commitMessage: 'Release %VERSION%',
+                commitFiles : ['-a'],
+                createTag: true,
+                tagName: '%VERSION%',
+                tagMessage: 'Version %VERSION%',
+                push: true,
+                pushTo: 'origin'
             }
         },// END bump
         compress: {

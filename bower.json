@@ -1,6 +1,6 @@
 {
   "name": "html5app",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "description": "HTML5 base application",
   "main": "index.html",
   "authors": [
