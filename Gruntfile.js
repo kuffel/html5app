@@ -21,6 +21,9 @@ module.exports = function (grunt) {
                         'bower_components/bootstrap-social/bootstrap-social.css',
                         'bower_components/bootstrap-table/dist/bootstrap-table.min.css',
                         'bower_components/bootstrap-toggle/css/bootstrap-toggle.css',
+                        'bower_components/bootstrap-select/dist/css/bootstrap-select.css',
+                        'bower_components/chosen/chosen.css',
+                        'bower_components/chosen-bootstrap/chosen.bootstrap.css',
                         'bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.css',
                         'bower_components/font-awesome/css/font-awesome.css',
                         'bower_components/jasny-bootstrap/dist/css/jasny-bootstrap.min.css'
@@ -33,7 +36,8 @@ module.exports = function (grunt) {
                 files : [
                     {expand: true, flatten: true, src: ['bower_components/font-awesome/fonts/*'], dest: 'public_html/libs/fonts/', filter: 'isFile'},
                     {expand: true, flatten: true, src: ['bower_components/bootstrap/fonts/*'], dest: 'public_html/libs/fonts/', filter: 'isFile'},
-                    {expand: true, cwd: 'bower_components/ckeditor', src: ['**'], dest: 'public_html/libs/ckeditor'}
+                    {expand: true, cwd: 'bower_components/ckeditor', src: ['**'], dest: 'public_html/libs/ckeditor'},
+                    {expand: true, cwd: 'bower_components/chosen-bootstrap', src: ['*.png'], dest: 'public_html/libs/css'}
                 ]
             }
         }, // END copy
@@ -54,9 +58,15 @@ module.exports = function (grunt) {
                     'bower_components/moment/moment.js',
                     'bower_components/moment/locale/de.js',
                     'bower_components/validator-js/validator.js',
+                    'bower_components/bootstrap3-wysihtml5-bower/dist/bootstrap3-wysihtml5.all.js',
+                    'bower_components/bootstrap3-wysihtml5-bower/dist/locales/bootstrap-wysihtml5.de-DE.js',
                     'bower_components/bootstrap-table/dist/bootstrap-table.js',
-                    'bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js',
                     'bower_components/bootstrap-table/dist/locale/bootstrap-table-de-DE.js',
+                    'bower_components/bootstrap-toggle/js/bootstrap-toggle.js',
+                    'bower_components/bootstrap-select/dist/js/bootstrap-select.js',
+                    'bower_components/bootstrap-select/dist/js/i18n/defaults-de_DE.js',
+                    'bower_components/chosen/chosen.jquery.js',
+                    'bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js',
                     'bower_components/localforage/dist/localforage.js'
                 ],
                 dest: 'public_html/libs/js/default.js'
