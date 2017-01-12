@@ -159,6 +159,8 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-bump');
     grunt.loadNpmTasks('grunt-zip');
 
+    grunt.registerTask('test', ['connect', 'qunit']);
+
     grunt.registerTask('run', ['connect', 'watch']);
 
     grunt.registerTask('build', [ 'cssmin', 'copy', 'concat', 'uglify', 'jshint', 'clean' , 'zip' ]);
