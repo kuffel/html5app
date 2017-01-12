@@ -146,7 +146,7 @@ module.exports = function (grunt) {
         compress: {
             main : {
                 options : {
-                    archive : "application.zip"
+                    archive : "application-<%= pkg.version %>.zip"
                 },
                 files : [
                     {src: ['public_html/**'], dest: '/'}
