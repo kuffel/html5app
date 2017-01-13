@@ -188,7 +188,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-changelog');
     grunt.loadNpmTasks('grunt-bump');
 
-    grunt.registerTask('test', 'Run qunit tests headless with phantom.js', ['connect', 'qunit']);
+    grunt.registerTask('test', 'Run qunit tests headless with phantom.js', ['cssmin', 'copy', 'concat', 'uglify', 'jshint', 'clean','connect', 'qunit']);
 
     grunt.registerTask('run', 'Start a webserver listening on port 9000', ['connect', 'watch']);
 
