@@ -130,7 +130,15 @@ Please refer these docs to get more information about using a particular library
 
 [grunt-contrib-watch - Run predefined tasks whenever watched file patterns are added, changed or deleted](https://github.com/gruntjs/grunt-contrib-watch)
 
-[grunt-zip - Zip and unzip files via a grunt plugin](https://github.com/twolfson/grunt-zip)
+[grunt-contrib-compress - Compress files and folders](https://github.com/gruntjs/grunt-contrib-compress)
+
+[grunt-changelog - Generate changelogs from commit history](https://github.com/ericmatthys/grunt-changelog)
+
+[grunt-image](https://www.npmjs.com/package/grunt-image)
+
+[grunt-license-bower](https://www.npmjs.com/package/grunt-license-bower)
+
+[sprity](https://www.npmjs.com/package/sprity)
 
 ### Useful resources
 

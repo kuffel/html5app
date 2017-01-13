@@ -130,6 +130,25 @@ module.exports = function (grunt) {
                 }
             }
         },// END qunit
+        changelog: {
+            sample: {
+                options: {
+                    dest : 'CHANGELOG',
+                    logArguments: [
+                        '--pretty=* %h - %ad: %s',
+                        '--no-merges',
+                        '--date=short'
+                    ],
+                    template: '{{> features}}',
+                    //after: '30 days ago',
+                    featureRegex: /^(.*)$/gim,
+                    partials: {
+                        features: '{{#if features}}{{#each features}}{{> feature}}{{/each}}{{else}}{{> empty}}{{/if}}\n',
+                        feature: '- {{this}} {{this.date}}\n'
+                    }
+                }
+            }
+        }, // END changelog
         bump: {
             options: {
                 files: ['package.json', 'bower.json'],
@@ -166,6 +185,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-contrib-qunit');
     grunt.loadNpmTasks('grunt-contrib-compress');
+    grunt.loadNpmTasks('grunt-changelog');
     grunt.loadNpmTasks('grunt-bump');
 
     grunt.registerTask('test', 'Run qunit tests headless with phantom.js', ['connect', 'qunit']);
