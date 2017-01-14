@@ -1,8 +1,10 @@
 language: node_js
 node_js:
+  - "node"
+  - "iojs"
   - "6"
-  - "6.1"
-  - "5.11"
+  - "5"
+  - "4"
 install:
   - npm install
   - bower install

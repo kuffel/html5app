@@ -1,5 +1,7 @@
 # html5app
 
+[![Build Status](https://travis-ci.org/kuffel/html5app.svg?branch=master)](https://travis-ci.org/kuffel/html5app)
+
 Base application to start HTML5 based UIs easily. This project provides all neccesary tools to help with development of single page HTML based Client applications with jQuery and bootstrap.
 
 ## Getting started
