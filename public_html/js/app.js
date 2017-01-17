@@ -1,5 +1,44 @@
 
+
+var app = {
+    instance : null
+};
+
+
+app.Application = Backbone.Router.extend({
+
+    defaultOptions: {
+        logging: false,
+        pushState: false
+    },
+
+    initialize : function(options){
+        _.extend(this.defaultOptions, options);
+
+        console.log('initialize');
+
+        Backbone.history.start();
+    }, // END initialize
+
+    routes : {
+        'signup' : 'signup',
+        '*path' : 'defaultRoute'
+    },
+
+    defaultRoute: function( path ){
+        console.log(path);
+    }
+
+});
+
+
+
+
 $(document).ready(function(){
+
+
+    app.instance = new app.Application({});
+
 
     $('[data-toggle="tooltip"]').tooltip();
     $('[data-toggle="popover"]').popover();
