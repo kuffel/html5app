@@ -1,44 +1,43 @@
+/*
+    underscore.js examples
+    http://underscorejs.org
+
+    $.get('./demodata/posts.json', function(posts){ data = posts });
+
+    _.each(data,function(i){ console.log(i); });
+    _.map([1, 2, 3], function(num){ return num * 3; });
+    _.find(data,function(i){ return i.title.indexOf('ex') >= 0 }); // Filter first
+    _.filter(data,function(i){ return i.title.indexOf('ex') > 0 }); // Filter all
+    _.reject(data,function(i){ return i.title.indexOf('ex') > 0 }); // Opposite of filter, filter out if true
+    _.where(data, { guid : "6b1a6f92-5542-485e-b5cf-52d9ec5c4ac1" });  // Find all
+    _.findWhere(data, { guid : "6b1a6f92-5542-485e-b5cf-52d9ec5c4ac1" }); // Find and return first
+    _.every(data,function(i){ return i.title.length > 0 });
+    _.some(data,function(i){ return i.title.length == 12 });
+    _.contains([1,2,3,4,5,6,7,8], 4 );
+    _.invoke([ 'alpha', 'beta', 'charlie', 'delta' ], 'toUpperCase');
+    _.pluck( data , 'guid')
+    _.max([23,534,63,35345,23432,10000,88123]);
+    _.min([23,534,63,35345,23432,10000,88123]);
+    _.sortBy(data, 'title')
+    _.groupBy(['one', 'two', 'three'], 'length');
+    _.shuffle([1, 2, 3, 4, 5, 6]);
+    _.sample(data,4);
+    _.size(data);
 
 
-var app = {
-    instance : null
-};
+    underscore.string examples
+    https://epeli.github.io/underscore.string/
 
 
-app.Application = Backbone.Router.extend({
-
-    defaultOptions: {
-        logging: false,
-        pushState: false
-    },
-
-    initialize : function(options){
-        _.extend(this.defaultOptions, options);
-
-        console.log('initialize');
-
-        Backbone.history.start();
-    }, // END initialize
-
-    routes : {
-        'signup' : 'signup',
-        '*path' : 'defaultRoute'
-    },
-
-    defaultRoute: function( path ){
-        console.log(path);
-    }
-
-});
 
 
+
+
+
+ */
 
 
 $(document).ready(function(){
-
-
-    app.instance = new app.Application({});
-
 
     $('[data-toggle="tooltip"]').tooltip();
     $('[data-toggle="popover"]').popover();
