@@ -28,10 +28,17 @@
     underscore.string examples
     https://epeli.github.io/underscore.string/
 
+    validator.js examples
+    https://github.com/chriso/validator.js
 
+    async examples
+    https://github.com/caolan/async
 
+    moment.js examples
+    https://momentjs.com/
 
-
+    localforage examples
+    https://localforage.github.io/localForage/
 
 
  */
@@ -69,6 +76,71 @@ $(document).ready(function(){
     $('.chosen-select').chosen({
         disable_search_threshold: 10,
         no_results_text: "Oops, nothing found!"
+    });
+
+    $('#datetimepicker1').datetimepicker({
+        calendarWeeks : true,
+        showTodayButton : true,
+        showClear : true,
+        showClose : true
+    });
+
+    $('#datetimepicker2').datetimepicker({
+        locale : 'de',
+        format: 'DD.MM.YYYY',
+        calendarWeeks : true,
+        showTodayButton : true,
+        showClear : true,
+        showClose : true
+    });
+
+    $('#datetimepicker3').datetimepicker({
+        locale : 'de',
+        format: 'LT'
+    });
+
+    $('#datetimepicker4').datetimepicker({
+        icons: {
+            time: "fa fa-clock-o",
+            date: "fa fa-calendar",
+            up: "fa fa-arrow-up",
+            down: "fa fa-arrow-down"
+        },
+        viewMode: 'years'
+    });
+
+    $('#datetimepicker5').datetimepicker({
+        defaultDate: moment( "11/01/2013", "MM/DD/YYYY" ),
+        disabledDates: [
+            moment("12/25/2013" , "MM/DD/YYYY"),
+            moment("12/11/2013" , "MM/DD/YYYY"),
+            moment("12/22/2013" , "MM/DD/YYYY"),
+            new Date(2013, 11 - 1, 21)
+            //"11/22/2013 00:53"
+        ]
+    });
+
+    $('#datetimepicker6').datetimepicker({
+        daysOfWeekDisabled: [5, 6]
+    });
+    $('#datetimepicker7').datetimepicker({
+        useCurrent: false //Important! See issue #1075
+    });
+    $("#datetimepicker6").on("dp.change", function (e) {
+        $('#datetimepicker7').data("DateTimePicker").minDate(e.date);
+    });
+    $("#datetimepicker7").on("dp.change", function (e) {
+        $('#datetimepicker6').data("DateTimePicker").maxDate(e.date);
+    });
+
+    $('#datetimepicker10').datetimepicker({
+        viewMode: 'years',
+        format: 'MM.YYYY'
+    });
+
+    $('#datetimepicker12').datetimepicker({
+        inline: true,
+        sideBySide: true
     });
 
 
