@@ -40,6 +40,19 @@
     localforage examples
     https://localforage.github.io/localForage/
 
+    // TODO: Libraries
+    http://marionettejs.com/
+    http://velocityjs.org/
+    http://lunrjs.com/
+    http://tether.io/
+    http://interactjs.io/
+    https://github.com/bevacqua/dragula
+    http://twitter.github.io/typeahead.js/
+    http://listjs.com/
+    https://scrollrevealjs.org/
+    http://socket.io/
+    https://libraries.io/bower/fastclick
+    http://i18next.com/
 
  */
 
