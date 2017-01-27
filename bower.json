@@ -46,7 +46,8 @@
     "jquery.cookie": "^1.4.1",
     "chosen": "^1.6.2",
     "chosen-bootstrap": "^1.1.0",
-    "bootstrap-tagsinput": "^0.8.0"
+    "bootstrap-tagsinput": "^0.8.0",
+    "backbone.marionette": "marionette#^3.1.0"
   },
   "resolutions": {
     "chosen": "^1.6.2",

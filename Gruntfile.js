@@ -38,7 +38,34 @@ module.exports = function (grunt) {
                     {expand: true, flatten: true, src: ['bower_components/font-awesome/fonts/*'], dest: 'public_html/libs/fonts/', filter: 'isFile'},
                     {expand: true, flatten: true, src: ['bower_components/bootstrap/fonts/*'], dest: 'public_html/libs/fonts/', filter: 'isFile'},
                     {expand: true, cwd: 'bower_components/ckeditor', src: ['**'], dest: 'public_html/libs/ckeditor'},
-                    {expand: true, cwd: 'bower_components/chosen-bootstrap', src: ['*.png'], dest: 'public_html/libs/css'}
+                    {expand: true, cwd: 'bower_components/chosen-bootstrap', src: ['*.png'], dest: 'public_html/libs/css'},
+
+                    /*
+                    { src: ['bower_components/requirejs/require.js'], dest: 'public_html/libs/js/require.js'},
+                    { src: ['bower_components/jquery/dist/jquery.js'], dest: 'public_html/libs/js/jquery.js'},
+                    { src: ['bower_components/bootstrap/dist/js/bootstrap.js'], dest: 'public_html/libs/js/bootstrap.js'},
+                    { src: ['bower_components/jasny-bootstrap/dist/js/jasny-bootstrap.js'], dest: 'public_html/libs/js/jasny-bootstrap.js'},
+                    { src: ['bower_components/underscore/underscore.js'], dest: 'public_html/libs/js/underscore.js'},
+                    { src: ['bower_components/backbone/backbone.js'], dest: 'public_html/libs/js/backbone.js'},
+                    { src: ['bower_components/underscore.string/dist/underscore.string.js'], dest: 'public_html/libs/js/underscore.string.js'},
+                    { src: ['bower_components/async/dist/async.js'], dest: 'public_html/libs/js/async.js'},
+                    { src: ['bower_components/moment/moment.js'], dest: 'public_html/libs/js/moment.js'},
+                    { src: ['bower_components/moment/locale/de.js'], dest: 'public_html/libs/js/moment-de.js'},
+                    { src: ['bower_components/validator-js/validator.js'], dest: 'public_html/libs/js/validator.js'},
+                    { src: ['bower_components/bootstrap3-wysihtml5-bower/dist/bootstrap3-wysihtml5.all.js'], dest: 'public_html/libs/js/bootstrap3-wysihtml5.js'},
+                    { src: ['bower_components/bootstrap3-wysihtml5-bower/dist/locales/bootstrap-wysihtml5.de-DE.js'], dest: 'public_html/libs/js/bootstrap-wysihtml5.de-DE.js'},
+                    { src: ['bower_components/bootstrap-table/dist/bootstrap-table.js'], dest: 'public_html/libs/js/bootstrap-table.js'},
+                    { src: ['bower_components/bootstrap-table/dist/locale/bootstrap-table-de-DE.js'], dest: 'public_html/libs/js/bootstrap-table-de-DE.js'},
+                    { src: ['bower_components/bootstrap-toggle/js/bootstrap-toggle.js'], dest: 'public_html/libs/js/bootstrap-toggle.js'},
+                    { src: ['bower_components/bootstrap-select/dist/js/bootstrap-select.js'], dest: 'public_html/libs/js/bootstrap-select.js'},
+                    { src: ['bower_components/bootstrap-select/dist/js/i18n/defaults-de_DE.js'], dest: 'public_html/libs/js/bootstrap-select-de.js'},
+                    { src: ['bower_components/bootstrap-tagsinput/dist/bootstrap-tagsinput.js'], dest: 'public_html/libs/js/bootstrap-tagsinput.js'},
+                    { src: ['bower_components/chosen/chosen.jquery.js'], dest: 'public_html/libs/js/chosen.jquery.js'},
+                    { src: ['bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js'], dest: 'public_html/libs/js/bootstrap-datetimepicker.js'},
+                    { src: ['bower_components/localforage/dist/localforage.js'], dest: 'public_html/libs/js/localforage.js'},
+                    { src: ['bower_components/backbone.marionette/lib/backbone.marionette.js'], dest: 'public_html/libs/js/backbone.marionette.js'},
+                    { src: ['bower_components/backbone.radio/build/backbone.radio.js'], dest: 'public_html/libs/js//backbone.radio.js'},
+                    */
                 ]
             }
         }, // END copy
@@ -69,7 +96,9 @@ module.exports = function (grunt) {
                     'bower_components/bootstrap-tagsinput/dist/bootstrap-tagsinput.js',
                     'bower_components/chosen/chosen.jquery.js',
                     'bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js',
-                    'bower_components/localforage/dist/localforage.js'
+                    'bower_components/localforage/dist/localforage.js',
+                    'bower_components/backbone.radio/build/backbone.radio.js',
+                    'bower_components/backbone.marionette/lib/backbone.marionette.js'
                 ],
                 dest: 'public_html/libs/js/default.js'
             }
