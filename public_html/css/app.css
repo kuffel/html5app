@@ -1,186 +1,156 @@
-
-
-    html {
-        height: 100%;
-    }
-
-    body.with-navbar-fixed-top {
-        padding-top: 70px;
-    }
-
-
-    .bootstrap-tagsinput {
-        display: block;
-    }
-
-    /*
-    ########################################################################
-    Offcanvas push helper classes
-    ########################################################################
-    */
-
-    body.with-offcanvas-push {
-        height: 100%;
-        padding: 50px 0 0 0;
-    }
-
-    body.with-offcanvas-push .navbar-toggle {
-        float: left;
-        margin-left: 15px;
-    }
-
-    @media (min-width: 0) {
-        body.with-offcanvas-push .navbar-toggle {
-            display: block; /* force showing the toggle */
-        }
-    }
-
-    @media (min-width: 992px) {
-        body.with-offcanvas-push {
-            padding: 0;
-        }
-        body.with-offcanvas-push .navbar {
-            right: auto;
-            background: none;
-            border: none;
-        }
-    }
-
-
-    /*
-    ########################################################################
-    Offcanvas reveal helper classes
-    ########################################################################
-    */
-
-    body.with-offcanvas-reveal {
-        height: 100%;
-    }
-
-    body.with-offcanvas-reveal .navbar-toggle {
-        float: left;
-        margin-left: 15px;
-    }
-
-    body.with-offcanvas-reveal .navmenu {
-        z-index: 1;
-    }
-
-    body.with-offcanvas-reveal .canvas {
-        position: relative;
-        left: 0;
-        z-index: 2;
-        min-height: 100%;
-        padding: 50px 0 0 0;
-        background: #fff;
-    }
-
-    @media (min-width: 0) {
-    body.with-offcanvas-reveal .navbar-toggle {
-        display: block; /* force showing the toggle */
-    }
-    }
-
-    @media (min-width: 992px) {
-        body.with-offcanvas-reveal {
-            padding: 0;
-        }
-        body.with-offcanvas-reveal .navbar {
-            right: auto;
-            background: none;
-            border: none;
-        }
-        body.with-offcanvas-reveal .canvas {
-            padding: 0;
-        }
-    }
-
-
-    /*
-    ########################################################################
-    Offcanvas navbar helper classes
-    ########################################################################
-    */
-
-    body.with-offcanvas-navbar {
-        padding-top: 80px;
-        padding-bottom: 20px;
-    }
-
-
-    @media (min-width: 992px) {
-        body.with-offcanvas-navbar .navbar {
-            padding-right: 15px;
-        }
-    }
-
-
-    /*
-    ########################################################################
-    Navmenu helper classes
-    ########################################################################
-    */
-
-    body.with-navmenu-fixed-left,
-    body.with-navmenu-fixed-right {
-        height: 100%;
-        padding: 50px 0 0 0;
-    }
-
-    body.with-navmenu-fixed-left .navmenu,
-    body.with-navmenu-fixed-right .navmenu {
-        padding-top: 50px;
-    }
-
-    body.with-navmenu-fixed-left .navbar,
-    body.with-navmenu-fixed-right .navbar {
-        display: block;
-        text-align: center;
-    }
-
-    body.with-navmenu-fixed-left .navbar-brand,
-    body.with-navmenu-fixed-right .navbar-brand {
-        display: inline-block;
-        float: none;
-    }
-
-    body.with-navmenu-fixed-left .navbar-toggle {
-        position: absolute;
-        float: left;
-        margin-left: 15px;
-    }
-
-    body.with-navmenu-fixed-right .navbar-toggle {
-        float: right;
-    }
-
-
-    body.with-navmenu-fixed-left .container,
-    body.with-navmenu-fixed-right .container {
-        max-width: 100%;
-    }
-
-    @media (min-width: 1px) {
-        body.with-navmenu-fixed-left .navbar-toggle,
-        body.with-navmenu-fixed-right .navbar-toggle {
-            display: block !important;
-        }
-    }
-
-    @media (min-width: 992px) {
-        body.with-navmenu-fixed-left {
-            padding: 0 0 0 300px;
-        }
-        body.with-navmenu-fixed-right {
-            padding: 0 300px 0 0;
-        }
-
-        body.with-navmenu-fixed-left .navmenu,
-        body.with-navmenu-fixed-right .navmenu {
-            padding-top: 0;
-        }
-        body.with-navmenu-fixed-left .navbar,
-        body.with-navmenu-fixed-right .navbar {
-            display: none !important; /* IE8 fix */
-        }
-    }
+html {
+  height: 100%;
+}
+body.with-navbar-fixed-top {
+  padding-top: 70px;
+}
+.bootstrap-tagsinput {
+  display: block;
+}
+/*# sourceMappingURL=app.css.map */
+/*
+########################################################################
+Navmenu helper classes
+########################################################################
+*/
+body.with-navmenu-fixed-left,
+body.with-navmenu-fixed-right {
+  height: 100%;
+  padding: 50px 0 0 0;
+}
+body.with-navmenu-fixed-left .navmenu,
+body.with-navmenu-fixed-right .navmenu {
+  padding-top: 50px;
+}
+body.with-navmenu-fixed-left .navbar,
+body.with-navmenu-fixed-right .navbar {
+  display: block;
+  text-align: center;
+}
+body.with-navmenu-fixed-left .navbar-brand,
+body.with-navmenu-fixed-right .navbar-brand {
+  display: inline-block;
+  float: none;
+}
+body.with-navmenu-fixed-left .navbar-toggle {
+  position: absolute;
+  float: left;
+  margin-left: 15px;
+}
+body.with-navmenu-fixed-right .navbar-toggle {
+  float: right;
+}
+body.with-navmenu-fixed-left .container,
+body.with-navmenu-fixed-right .container {
+  max-width: 100%;
+}
+@media (min-width: 1px) {
+  body.with-navmenu-fixed-left .navbar-toggle,
+  body.with-navmenu-fixed-right .navbar-toggle {
+    display: block !important;
+  }
+}
+@media (min-width: 992px) {
+  body.with-navmenu-fixed-left {
+    padding: 0 0 0 300px;
+  }
+  body.with-navmenu-fixed-right {
+    padding: 0 300px 0 0;
+  }
+  body.with-navmenu-fixed-left .navmenu,
+  body.with-navmenu-fixed-right .navmenu {
+    padding-top: 0;
+  }
+  body.with-navmenu-fixed-left .navbar,
+  body.with-navmenu-fixed-right .navbar {
+    display: none !important;
+    /* IE8 fix */
+  }
+}
+/*# sourceMappingURL=app.css.map */
+/*
+########################################################################
+Offcanvas push helper classes
+########################################################################
+*/
+body.with-offcanvas-push {
+  height: 100%;
+  padding: 50px 0 0 0;
+}
+body.with-offcanvas-push .navbar-toggle {
+  float: left;
+  margin-left: 15px;
+}
+@media (min-width: 0) {
+  body.with-offcanvas-push .navbar-toggle {
+    display: block;
+    /* force showing the toggle */
+  }
+}
+@media (min-width: 992px) {
+  body.with-offcanvas-push {
+    padding: 0;
+  }
+  body.with-offcanvas-push .navbar {
+    right: auto;
+    background: none;
+    border: none;
+  }
+}
+/*
+########################################################################
+Offcanvas reveal helper classes
+########################################################################
+*/
+body.with-offcanvas-reveal {
+  height: 100%;
+}
+body.with-offcanvas-reveal .navbar-toggle {
+  float: left;
+  margin-left: 15px;
+}
+body.with-offcanvas-reveal .navmenu {
+  z-index: 1;
+}
+body.with-offcanvas-reveal .canvas {
+  position: relative;
+  left: 0;
+  z-index: 2;
+  min-height: 100%;
+  padding: 50px 0 0 0;
+  background: #fff;
+}
+@media (min-width: 0) {
+  body.with-offcanvas-reveal .navbar-toggle {
+    display: block;
+    /* force showing the toggle */
+  }
+}
+@media (min-width: 992px) {
+  body.with-offcanvas-reveal {
+    padding: 0;
+  }
+  body.with-offcanvas-reveal .navbar {
+    right: auto;
+    background: none;
+    border: none;
+  }
+  body.with-offcanvas-reveal .canvas {
+    padding: 0;
+  }
+}
+/*
+########################################################################
+Offcanvas navbar helper classes
+########################################################################
+*/
+body.with-offcanvas-navbar {
+  padding-top: 80px;
+  padding-bottom: 20px;
+}
+@media (min-width: 992px) {
+  body.with-offcanvas-navbar .navbar {
+    padding-right: 15px;
+  }
+}
+/*# sourceMappingURL=app.css.map */

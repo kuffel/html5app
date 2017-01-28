@@ -57,7 +57,7 @@ var PersonCard = Backbone.View.extend({
 
     handleClick : function(){
         console.log("handleClick: "+this.model.get("_id"));
-        this.model.destroy()
+        this.model.destroy();
     },
 
     initialize: function( options ) {
@@ -102,7 +102,7 @@ var BodyView = Backbone.View.extend({
         'mouseover' : "onBodyClick"
     },
     onBodyClick : function(){
-        console.log("onBodyClick")
+        console.log("onBodyClick");
     },
     render : function(){
         this.$el.css("backgroundColor","#eaeaea");

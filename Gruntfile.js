@@ -30,6 +30,18 @@ module.exports = function (grunt) {
                         'bower_components/jasny-bootstrap/dist/css/jasny-bootstrap.min.css'
                     ]
                 }
+            },
+            app : {
+                options: {
+                    banner: '/*! <%= pkg.name %> / <%= pkg.version %> / <%= grunt.template.today("yyyy-mm-dd HH:MM:ss") %> */\n',
+                    relativeTo: './',
+                    root: './'
+                },
+                files: {
+                    'public_html/css/app.min.css': [
+                        'public_html/css/app.css'
+                    ]
+                }
             }
         }, // END cssmin
         copy: {
@@ -69,6 +81,17 @@ module.exports = function (grunt) {
                 ]
             }
         }, // END copy
+        less: {
+            default: {
+                options: {
+                    paths: ['public_html/less'],
+                    sourceMap : true
+                },
+                files: {
+                    'public_html/css/app.css' : 'public_html/less/*.less'
+                }
+            }
+        }, // END less
         concat: {
             options: {
                 banner: '/*! <%= pkg.name %> / <%= pkg.version %> / <%= grunt.template.today("yyyy-mm-dd HH:MM:ss") %> */\n',
@@ -139,6 +162,10 @@ module.exports = function (grunt) {
             scripts: {
                 files: ['public_html/js/off/*', 'public_html/js/routes/*'],
                 tasks: ['concat', 'uglify']
+            },
+            stylesheets : {
+                files: ['public_html/less/**/*'],
+                tasks: ['less']
             }
         }, // END watch
         connect: {
@@ -214,15 +241,16 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-contrib-qunit');
     grunt.loadNpmTasks('grunt-contrib-compress');
+    grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-changelog');
     grunt.loadNpmTasks('grunt-bump');
 
-    grunt.registerTask('test', 'Run qunit tests headless with phantom.js', ['cssmin', 'copy', 'concat', 'uglify', 'jshint', 'clean','connect', 'qunit']);
+    grunt.registerTask('test', 'Run qunit tests headless with phantom.js', ['less', 'cssmin', 'copy', 'concat', 'uglify', 'jshint', 'clean','connect', 'qunit']);
 
     grunt.registerTask('run', 'Start a webserver listening on port 9000', ['connect', 'watch']);
 
-    grunt.registerTask('build', 'Create a zip file for deployment on production servers', [ 'cssmin', 'copy', 'concat', 'uglify', 'jshint', 'clean' , 'compress' ]);
+    grunt.registerTask('build', 'Create a zip file for deployment on production servers', ['less', 'cssmin', 'copy', 'concat', 'uglify', 'jshint', 'clean' , 'compress' ]);
 
-    grunt.registerTask('default', 'Build and prepare everything', [ 'cssmin', 'copy', 'concat', 'uglify', 'jshint', 'clean' ]);
+    grunt.registerTask('default', 'Build and prepare everything', [ 'less', 'cssmin', 'copy', 'concat', 'uglify', 'jshint', 'clean' ]);
 
 };
