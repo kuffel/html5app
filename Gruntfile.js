@@ -196,7 +196,7 @@ module.exports = function (grunt) {
                         '--date=short'
                     ],
                     template: '{{> features}}',
-                    //after: '30 days ago',
+                    after: 'bb6fe0d',
                     featureRegex: /^(.*)$/gim,
                     partials: {
                         features: '{{#if features}}{{#each features}}{{> feature}}{{/each}}{{else}}{{> empty}}{{/if}}\n',

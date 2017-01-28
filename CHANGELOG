@@ -1,3 +1,18 @@
+- * ed0ab13 - 2017-01-28: Added less files and update Gruntfile. 
+- * 14ae8eb - 2017-01-28: Added backbone.js examples. 
+- * 62ac990 - 2017-01-27: Added backbone marionette. 
+- * f430eef - 2017-01-26: Added TODOs. 
+- * 0f4b570 - 2017-01-25: Added datetimepicker initialization code. 
+- * dbe81cf - 2017-01-25: Added underscore.js examples. 
+- * 3c12977 - 2017-01-18: Updated travis.yml 
+- * 55efe3f - 2017-01-17: Added Backbone.js router. 
+- * 16dcaef - 2017-01-14: Updated travis.yml 
+- * 75a7e8b - 2017-01-14: Updated travis.yml 
+- * ff8ec68 - 2017-01-13: Updated travis.yml 
+- * d5f03f6 - 2017-01-13: Updated travis.yml 
+- * 8fe76e3 - 2017-01-13: Updated travis.yml 
+- * 220ca6b - 2017-01-13: Added travis.yml file. 
+- * 0011b1e - 2017-01-13: Added grunt task for changelog generation. 
 - * e692e7f - 2017-01-13: Build task generates a zip file with version. 
 - * da213d9 - 2017-01-12: Added version number to generated css and js files. 
 - * a337b83 - 2017-01-12: Release 0.0.4 
@@ -11,4 +26,10 @@
 - * 0525ff5 - 2017-01-12: Added navmenu examples. 
 - * 5804dc6 - 2017-01-11: Added some Bootstrap examples. 
 - * 467d6ad - 2017-01-06: Updated README 
+- * 7983dec - 2017-01-06: Added .htaccess file. 
+- * a31c27f - 2017-01-06: Added favicons. 
+- * 311b9c5 - 2017-01-06: Updated README and Gruntfile. 
+- * 858fc4f - 2017-01-06: Added index.html, updated Gruntfile, Readme and dependencies. 
+- * 7bd960e - 2017-01-05: Added some dependencies. 
+- * d6e7d0d - 2017-01-05: Added LICENSE, CHANGELOG and other documents. Updated README. 
 
