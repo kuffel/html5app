@@ -1,5 +1,99 @@
 // Backbone.js Models and Collections.
 
+var App = App || {};
+App.instance = null;
+App.Models = App.Models || {};
+App.Collections = App.Collections || {};
+App.Views = App.Views || {};
+App.Routes = App.Routes || {};
+App.Utils = App.Utils || {};
+
+
+
+
+
+App.Router = Backbone.Router.extend({
+
+    defaultOptions: {
+        logging: false,
+        pushState: false,
+        rootDir : '/public_html/blank.html'
+    },
+
+    initialize: function(options) {
+        _.extend(this.defaultOptions, options);
+
+
+        console.log(this.defaultOptions);
+
+        /*
+        this.on("route:file", function(path){
+            console.log("route:file "+path);
+        });
+        */
+
+
+        Backbone.history.start({
+            'pushState': this.defaultOptions.pushState,
+            'root': this.defaultOptions.rootDir
+        });
+    },
+
+    routes: {
+        'home' : 'home',
+        'something' : 'something',
+        'anything' : 'anything',
+        'demo' : 'demo',
+        'help' : 'help',
+        'search' : 'search',
+        'search/:query' : 'search',
+        'search/:query/:page' : 'search',
+        'file/*path' : 'file',
+        'docs/:section(/:subsection)' : 'docs',
+        '*path' : 'defaultRoute'
+    },
+
+    home: function() {
+        console.log('home');
+    },
+
+    something: function() {
+        console.log('something');
+    },
+
+    anything: function() {
+        console.log('anything');
+    },
+
+    demo: function() {
+        console.log('demo');
+    },
+
+    help: function() {
+        console.log('help');
+    },
+
+    search: function(query, page) {
+        console.log('search : '+query+ " page: "+page);
+    },
+
+    file: function( path ){
+        console.log('file: '+path);
+    },
+
+    docs: function( section, subsection ){
+        console.log('docs : '+section+ " subsection: "+subsection);
+    },
+
+    defaultRoute : function( path ){
+        console.log('defaultRoute: '+path);
+    }
+
+
+});
+
+
+
 
 var Post = Backbone.Model.extend({
 
@@ -52,7 +146,6 @@ var PersonCard = Backbone.View.extend({
 
     events: {
         "click" : "handleClick"
-
     },
 
     handleClick : function(){
@@ -111,14 +204,13 @@ var BodyView = Backbone.View.extend({
 });
 
 
-
+/*
 Persons.loadPersons(function(loaded){
 
-    /*
-     p200 = loaded.at(200);
-     pc200 = new PersonCard({ model: p200 });
-     jQuery('body').append(pc200.render().el);
-     */
+    //p200 = loaded.at(200);
+    //pc200 = new PersonCard({ model: p200 });
+    //jQuery('body').append(pc200.render().el);
+
 
     demoPersons = loaded;
     for(var i = 0 ; i < _.size(demoPersons); i++){
@@ -126,8 +218,15 @@ Persons.loadPersons(function(loaded){
         var pv = new PersonCard({ model: p });
         jQuery('body').append(pv.render().el);
     }
+});
+*/
 
+jQuery(document).ready(function(){
 
+    App.instance = new App.Router({
+        logging : true
+    });
 
 });
+
 
