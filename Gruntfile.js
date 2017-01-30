@@ -4,7 +4,7 @@ module.exports = function (grunt) {
     grunt.initConfig({
         pkg : grunt.file.readJSON('package.json'),
         cssmin: {
-            base: {
+            default: {
                 options: {
                     banner: '/*! <%= pkg.name %> / <%= pkg.version %> / <%= grunt.template.today("yyyy-mm-dd HH:MM:ss") %> */\n',
                     relativeTo: './',
@@ -120,6 +120,7 @@ module.exports = function (grunt) {
                     'bower_components/chosen/chosen.jquery.js',
                     'bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js',
                     'bower_components/localforage/dist/localforage.js',
+                    'bower_components/js-cookie/src/js.cookie.js',
                     'bower_components/backbone.radio/build/backbone.radio.js',
                     'bower_components/backbone.marionette/lib/backbone.marionette.js'
                 ],

@@ -11,6 +11,6 @@ QUnit.test("Dependencies", function( assert ){
     assert.ok( validator !== undefined, "validator.js found." );
     assert.ok( localforage !== undefined, "localforage found." );
     assert.ok( moment !== undefined, "moment.js found." );
-    //assert.ok( jQuery.cookie !== undefined, "jQuery.cookie found." );
+    assert.ok( Cookies !== undefined, "js-cookie found." );
     assert.ok( wysihtml5 !== undefined, "wysihtml5 found." );
 });

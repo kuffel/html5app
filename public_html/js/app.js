@@ -1,4 +1,26 @@
 /*
+     jQuery examples
+
+     $.ajaxSetup({
+         type: 'GET',
+         url: 'https://www.demo.com/api',
+         headers : {
+             'x-api-key' : 'KEYHERE',
+             'x-api-client-key' : 'CLIENTKEYHERE'
+         },
+         timeout: 10000,
+         dataType: 'json',
+         success: function(data, textStatus, jqXHR){
+             console.log(data);
+         },
+         error: function(jqXHR, textStatus, errorThrown){
+             console.log(textStatus);
+         }
+     });
+
+
+
+
     underscore.js examples
     http://underscorejs.org
 
@@ -31,14 +53,62 @@
     validator.js examples
     https://github.com/chriso/validator.js
 
+
+
+
+
+
+
+
+
+
+
+
     async examples
     https://github.com/caolan/async
 
     moment.js examples
     https://momentjs.com/
 
+
+
+
+
+
     localforage examples
     https://localforage.github.io/localForage/
+
+     localforage.config({
+         driver: [localforage.WEBSQL,localforage.INDEXEDDB,localforage.LOCALSTORAGE],
+         name: 'html5app_db',
+         storeName: 'appstore'
+     });
+
+    localforage.setItem("key0", "value1", function(err,value){});
+    localforage.getItem("key0", function(err,value){ console.log(err); console.log(value); });
+    localforage.removeItem("key0", function(err){});
+    localforage.length(function(err,result){ console.log(err); console.log(result); });
+    localforage.keys(function(err, keys){ console.log(keys); });
+
+
+
+
+
+    js-cookie
+    https://github.com/js-cookie/js-cookie
+
+    Cookies()
+    Cookies.get()
+    Cookies.get("a")
+    Cookies.set('name', 'value');
+    Cookies.set('name', 'value', { expires: 7 });
+    Cookies.set('name', 'value', { expires: 7, path: '', secure: true }); // expires in days
+    Cookies.get('name'); // => 'value'
+    Cookies.get('nothing'); // => undefined
+    Cookies.remove('name');
+
+
+
 
     // TODO: Libraries
     http://marionettejs.com/
