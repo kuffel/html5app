@@ -50,17 +50,18 @@
     underscore.string examples
     https://epeli.github.io/underscore.string/
 
+    s.slugify('Generates urls for human-readable titles!');
+    s.numberFormat(123456789.123, 2, ",", ".");
+    s.levenshtein("kitten", "kittah");
+
     validator.js examples
     https://github.com/chriso/validator.js
 
-
-
-
-
-
-
-
-
+    validator.isAfter("Tue Feb 12 2017 00:46:02 GMT+0100 (CET)","Tue Feb 02 2017 00:46:02 GMT+0100 (CET)");
+    validator.isBefore("Tue Jan 31 2017 00:44:02 GMT+0100 (CET)","Tue Jan 31 2017 00:46:01 GMT+0100 (CET)");
+    validator.isBoolean("true");
+    validator.isDate("2016-01-31");
+    validator.isEmail("max@meier.eu");
 
 
 
@@ -70,8 +71,13 @@
     moment.js examples
     https://momentjs.com/
 
-
-
+    var now = moment();
+    var fromString = moment("2016-01-28 14:33");
+    var withFormat = moment("12-25-1995", "MM-DD-YYYY").format("DD.MM.YYYY");
+    var fromObject = moment({ years:2010, months:3, date:5, hours:15, minutes:10, seconds:3, milliseconds:123});
+    moment().add(7, 'days').subtract(1, 'months').year(2009).hours(0).minutes(0).seconds(0);
+    moment('2010-10-20').isSame('2010-10-20'); // true
+    moment('2010-10-20').isSame('2010-10-21', 'month'); // true
 
 
 
