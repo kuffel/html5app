@@ -125,7 +125,8 @@ module.exports = function (grunt) {
                     'bower_components/scrollreveal/dist/scrollreveal.js',
                     'bower_components/backbone.radio/build/backbone.radio.js',
                     'bower_components/backbone.marionette/lib/backbone.marionette.js',
-                    'bower_components/metisMenu/dist/metisMenu.js'
+                    'bower_components/metisMenu/dist/metisMenu.js',
+                    'bower_components/jquery.easing/js/jquery.easing.js'
                 ],
                 dest: 'public_html/libs/js/default.js'
             }
