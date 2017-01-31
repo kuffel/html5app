@@ -121,6 +121,7 @@ module.exports = function (grunt) {
                     'bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js',
                     'bower_components/localforage/dist/localforage.js',
                     'bower_components/js-cookie/src/js.cookie.js',
+                    'bower_components/scrollreveal/dist/scrollreveal.js',
                     'bower_components/backbone.radio/build/backbone.radio.js',
                     'bower_components/backbone.marionette/lib/backbone.marionette.js'
                 ],

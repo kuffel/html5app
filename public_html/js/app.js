@@ -114,6 +114,14 @@
     Cookies.remove('name');
 
 
+    scrollreveal
+    https://github.com/jlmakes/scrollreveal
+
+     sr = new ScrollReveal();
+     sr.reveal('.list-group-item', { duration: 200 });
+
+
+
 
 
     // TODO: Libraries
@@ -125,11 +133,10 @@
     https://github.com/bevacqua/dragula
     http://twitter.github.io/typeahead.js/
     http://listjs.com/
-    https://scrollrevealjs.org/
     http://socket.io/
     https://libraries.io/bower/fastclick
     http://i18next.com/
-
+    https://github.com/marak/Faker.js/
  */
 
 
