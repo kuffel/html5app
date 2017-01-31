@@ -27,7 +27,8 @@ module.exports = function (grunt) {
                         'bower_components/chosen-bootstrap/chosen.bootstrap.css',
                         'bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.css',
                         'bower_components/font-awesome/css/font-awesome.css',
-                        'bower_components/jasny-bootstrap/dist/css/jasny-bootstrap.min.css'
+                        'bower_components/jasny-bootstrap/dist/css/jasny-bootstrap.min.css',
+                        'bower_components/metisMenu/dist/metisMenu.css'
                     ]
                 }
             },
@@ -123,7 +124,8 @@ module.exports = function (grunt) {
                     'bower_components/js-cookie/src/js.cookie.js',
                     'bower_components/scrollreveal/dist/scrollreveal.js',
                     'bower_components/backbone.radio/build/backbone.radio.js',
-                    'bower_components/backbone.marionette/lib/backbone.marionette.js'
+                    'bower_components/backbone.marionette/lib/backbone.marionette.js',
+                    'bower_components/metisMenu/dist/metisMenu.js'
                 ],
                 dest: 'public_html/libs/js/default.js'
             }
